@@ -16,11 +16,13 @@ font-family: 'Mulish', sans-serif; */
 }
 
 .container {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: auto;
     width: 80%;
     margin: 0 auto;
     border-radius: 16px;
+    margin-bottom: 80px;
+    overflow: hidden;
 
 }
 
@@ -31,6 +33,10 @@ font-family: 'Mulish', sans-serif; */
     background-image: url('./Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    /* position: relative; */
+
 
 
 }
@@ -79,6 +85,7 @@ font-family: 'Mulish', sans-serif; */
 
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
+
 }
 
 .header-form>form {
@@ -96,6 +103,9 @@ font-family: 'Mulish', sans-serif; */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-right: 0;
+
+
 }
 
 .btn-primary {
@@ -104,9 +114,47 @@ font-family: 'Mulish', sans-serif; */
     border: none;
     color: #FFF;
     text-align: center;
-    
+
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .explore>h2 {
+
+        text-align: center;
+
+        font-size: 32px;
+        padding-top: 53px;
+
+
+    }
+
+    .header-form>form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1032px) {
+
+    .container{
+        width: 90%;
+    }
+    .header-form>form>.input {
+        width: 174px;
+        
+        flex-shrink: 0;
+    }
+    
+    .header-form{
+        width: 90%;
+    }
+    .btn-primary{
+        width: 174px;
+    }
 }
