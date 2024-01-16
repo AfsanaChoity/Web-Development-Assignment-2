@@ -8,3 +8,105 @@ font-family: 'Mulish', sans-serif; */
 /* font-family: 'Inter', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Mulish', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    border: 2px solid white;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 16px;
+
+}
+
+/* header style */
+
+.header-container {
+
+    background-image: url('./Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.explore>h2 {
+    color: #FFF;
+
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    padding-top: 106px;
+    text-align: center;
+    padding-bottom: 24px;
+
+
+}
+
+.explore-des {
+    color: #FFF;
+
+
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+}
+
+.explore-des p {
+    text-align: center;
+}
+
+.header-form {
+    /* border: 2px solid yellow; */
+    width: 85%;
+    margin: 0 auto;
+    /* text-align: center; */
+    margin-bottom: 100px;
+    padding: 16px;
+
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.header-form>form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.header-form>form>.input {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
