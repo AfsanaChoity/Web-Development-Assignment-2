@@ -248,7 +248,7 @@ font-family: 'Mulish', sans-serif; */
 
 /* section two */
 .choose-destination .heading,
-.des {
+.description {
     text-align: center;
 }
 
@@ -653,6 +653,9 @@ font-weight: 400;
         background-position: center;
     }
     /* section three */
+    .choose-head{
+        font-size: 20px;
+    }
     .why-choose{
         display: flex;
         flex-direction: column;
@@ -673,20 +676,24 @@ font-weight: 400;
     }
     .save{
         left: 100px;
-        top: 8370px;
+        top: 8030px;
+        
         
     }
     /* extra section */
     .container-extra{
         flex-direction: column;
-        /* height: 100%; */
-        /* width: 100%; */
+        
     }
     .box{
         width: 100%;
     }
     .container-2{
         flex-direction: column-reverse;
+    }
+    /* footer */
+    .footer hr{
+        width: 80%;
     }
     
 }
