@@ -15,7 +15,7 @@ font-family: 'Mulish', sans-serif; */
 }
 
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: auto;
     width: 80%;
     margin: 0 auto;
@@ -335,6 +335,52 @@ font-family: 'Mulish', sans-serif; */
     grid-column: 6/span 7;
 }
 
+/* section three */
+.container i{
+    font-size: 30px;
+}
+.why-choose{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.why-choose-last, .why-choose-one{
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+padding: 20px;
+
+
+}
+.why-choose-last{
+    width: 50%;
+    margin: 0 auto;
+}
+.hotel{
+    color: #131318;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+margin: 20px 0;
+}
+.hotel-des{
+    color: #5A5A5D;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.why-choose-two{
+    
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+
 /* section five */
 .a-simple {
     display: grid;
@@ -371,7 +417,78 @@ font-family: 'Mulish', sans-serif; */
     width: 276px;
     text-align: center;
 }
+/* section six */
+.container-news{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 50px;
+}
+.news{
+    border-radius: 16px;
+border: 1px solid #FF5400;
+padding: 40px;
+}
+#enter-name{
+    margin-top: 48px;
+}
+#enter-email{
+    margin: 16px 0;
+}
+#enter-name, #enter-email{
+    border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+border: none;
+width: 90%;
+height: 52px;
+color: rgba(19, 19, 24, 0.30);
 
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+.subscribe{
+    width: 90%;
+    height: 52px;
+}
+
+.news-img img{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.save{
+    width: 324px;
+height: 120px;
+transform: rotate(-25deg);
+
+border-radius: 16px;
+background: #FF5400;
+position: absolute;
+top: 4680px;
+left: 780px;
+}
+.save .travel{
+    color: #FFF;
+text-align: center;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding:  10px 0;
+}
+.save .save-up{
+    color: #FFF;
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
 /* Footer */
 .footer {
     background: rgba(19, 19, 24, 0.05);
@@ -424,9 +541,51 @@ font-family: 'Mulish', sans-serif; */
 
 }
 
+/* section extra */
+.container-extra{
+    display: flex;
+    height: auto;
+    /* border: 2px solid red; */
+}
+.box{
+    width: 50%;
+    height: 50%;
+     /* border: 2px solid blue; */
+}
+.saint{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+
+    
+}
+.container-extra .saint-martin , .saint-martin-des{
+    padding: 20px;
+}
+.container-extra .saint-martin{
+    color: grey;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.container-extra .saint-martin-des{
+    text-align: justify;
+    color: #5A5A5D;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+}
+
 
 /* Responsive for mobile */
 @media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
     .header-nav {
         flex-direction: column;
     }
@@ -477,7 +636,9 @@ font-family: 'Mulish', sans-serif; */
     }
 
     /* section two */
-    
+    .description, .footer-des{
+        width: 90%;
+    }
     .destination-img{
         height: 1520px ;
         
@@ -491,7 +652,43 @@ font-family: 'Mulish', sans-serif; */
     .article-5{
         background-position: center;
     }
-
+    /* section three */
+    .why-choose{
+        display: flex;
+        flex-direction: column;
+    }
+    .why-choose-last{
+        width: 90%;
+    }
+    /* section six */
+    .container-news{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-img img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .save{
+        left: 100px;
+        top: 8370px;
+        
+    }
+    /* extra section */
+    .container-extra{
+        flex-direction: column;
+        /* height: 100%; */
+        /* width: 100%; */
+    }
+    .box{
+        width: 100%;
+    }
+    .container-2{
+        flex-direction: column-reverse;
+    }
+    
 }
 
 /* responsive for laptop */
