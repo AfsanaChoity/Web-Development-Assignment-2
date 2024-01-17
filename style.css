@@ -32,19 +32,21 @@ font-family: 'Mulish', sans-serif; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
 
 .journey-junction {
     display: flex;
-    
-    
+
+
 }
-.journey-junction img{
+
+.journey-junction img {
     margin-right: 10px;
 }
-.journey-junction h3{
+
+.journey-junction h3 {
     color: #131318;
 
     font-size: 36px;
@@ -52,16 +54,18 @@ font-family: 'Mulish', sans-serif; */
     font-weight: 800;
     line-height: normal;
 }
-.journey-junction .junction{
+
+.journey-junction .junction {
     color: #FF5400;
 }
 
 .header-nav ul {
     display: flex;
-    
-    
+
+
 }
-.header-nav ul li a{
+
+.header-nav ul li a {
     text-decoration: none;
     color: var(--Dark-02, #424247);
 }
@@ -72,17 +76,18 @@ font-family: 'Mulish', sans-serif; */
     color: var(--Dark-02, #424247);
 
     font-size: 18px;
-    
+
     font-weight: 400;
 
-    
+
 }
-.header-nav ul .home a{
+
+.header-nav ul .home a {
     color: #FF5400;
 
-font-size: 18px;
+    font-size: 18px;
 
-font-weight: 700;
+    font-weight: 700;
 
 }
 
@@ -191,11 +196,11 @@ font-weight: 700;
 /* Section One */
 .our-popular-tour-container {
     display: flex;
-    
+
     gap: 50px;
 }
 
-.our-popular-tour h3 {
+.heading {
     color: #131318;
 
     font-size: 40px;
@@ -205,8 +210,18 @@ font-weight: 700;
     margin-bottom: 24px;
 }
 
-.our-popular-tour p,
-ul {
+.des {
+    color: rgba(19, 19, 24, 0.70);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    margin-bottom: 24px;
+}
+
+.our-popular-tour ul {
     color: rgba(19, 19, 24, 0.70);
 
     font-size: 16px;
@@ -222,9 +237,7 @@ ul {
     padding-bottom: 10px;
 }
 
-.our-popular-tour-des {
-    color: #5A5A5D;
-}
+
 
 .btn-read {
     width: 174px;
@@ -233,86 +246,182 @@ ul {
 
 }
 
+/* section two */
+.choose-destination .heading,
+.des {
+    text-align: center;
+}
+
+.description {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.destination-img {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    
+    gap: 20px;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 16px;
+}
+
+.article-1 {
+    background-image: url('./Images/Rectangle\ 5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/span 6;
+    grid-row: 1/span 1;
+}
+
+.article-2 {
+    background-image: url('./Images/Rectangle\ 8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FF5400;
+    grid-column: 7/span 6;
+
+}
+
+.article-3 {
+    
+    background-image: url('./Images/Rectangle\ 6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/span 4;
+
+}
+
+.article-4 {
+    
+    background-image: url('./Images/Rectangle\ 7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/span 5;
+}
+
+.article-5 {
+    background-image: url('./Images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 10/span 3;
+}
+
+.article-6 {
+    background-image: url('./Images/Rectangle\ 11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/span 5;
+}
+
+.article-7 {
+    background-image: url('./Images/Rectangle\ 10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 6/span 7;
+}
+
 /* section five */
-.a-simple{
+.a-simple {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 50px;
 }
-.five li{
+
+.five li {
     color: #131318;
 
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 26px; /* 162.5% */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
 }
 
 .five .watch-our-mountain {
-    
+
     color: #FFF;
 
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-display: flex;
-justify-content: center;
-align-items: center;
-background-image: url('./Images/Group\ 40089.png');
-background-repeat: no-repeat;
-background-size: cover;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Images/Group\ 40089.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.five .watch-our-mountain p{
+
+.five .watch-our-mountain p {
     width: 276px;
     text-align: center;
 }
 
 /* Footer */
-.footer{
+.footer {
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
 }
 
-.footer-junction{
+.footer-junction {
     padding-top: 110px;
     padding-bottom: 15px;
     justify-content: center;
 }
 
-.footer-des{
+.footer-des {
     color: #5A5A5D;
 
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
- /* 162.5% */
- width: 60%;
- margin: 0 auto;
- margin-bottom: 33px;
-}
-.icon{
-    font-size: 30px;
-    margin-bottom: 50px;
-    
-}
-.icon i{
-    margin-right: 20px;
-}
-.last{
-    color: #131318;
-    font-family: 'Inter', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-margin-top: 50px;
-padding-bottom: 110px;
-}
-.footer hr{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
     width: 60%;
     margin: 0 auto;
-    
+    margin-bottom: 33px;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+
+.icon i {
+    margin-right: 20px;
+}
+
+.last {
+    color: #131318;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 50px;
+    padding-bottom: 110px;
+}
+
+.footer hr {
+    width: 60%;
+    margin: 0 auto;
+
 }
 
 
@@ -321,20 +430,21 @@ padding-bottom: 110px;
     .header-nav {
         flex-direction: column;
     }
-    .header-nav ul{
+
+    .header-nav ul {
         display: flex;
-        
+
         flex-wrap: wrap;
     }
-    .header-nav ul li{
-        
+
+    .header-nav ul li {
+
         margin-right: 10px;
-        
+
     }
-    .header-nav .journey-junction h3{
-        
-        
-    }
+
+    .header-nav .journey-junction h3 {}
+
     .explore>h2 {
 
         text-align: center;
@@ -350,7 +460,8 @@ padding-bottom: 110px;
         grid-template-columns: 1fr;
     }
 
-    .our-popular-tour-container, .a-simple {
+    .our-popular-tour-container,
+    .a-simple {
         display: flex;
         flex-direction: column;
 
@@ -360,9 +471,25 @@ padding-bottom: 110px;
         width: 100%;
     }
 
-    .watch-our-mountain{
+    .watch-our-mountain {
         height: 400px;
+
+    }
+
+    /* section two */
+    
+    .destination-img{
+        height: 1520px ;
         
+    }
+    .article{
+        grid-column: 1/span 12;
+        
+        height: 200px;
+        
+    }
+    .article-5{
+        background-position: center;
     }
 
 }
@@ -371,15 +498,13 @@ padding-bottom: 110px;
 
 @media screen and (min-width: 992px) and (max-width: 1032px) {
 
-    .container {
-        
-    }
-    
+    .container {}
+
 
     .header-form>form>.input {
         width: 150px;
 
-        
+
     }
 
     .header-form {
@@ -391,17 +516,15 @@ padding-bottom: 110px;
     }
 
     /* section one */
-    .our-popular-tour-container {
-        
-    }
+    .our-popular-tour-container {}
 
-    .our-popular-tours-image img {
+    .our-popular-tours-image img {}
 
-    }
-    .our-popular-tour{
+    .our-popular-tour {
         /* border: 2px solid green; */
     }
-    .our-popular-tours-image{
+
+    .our-popular-tours-image {
         /* border: 2px solid green; */
     }
 }
